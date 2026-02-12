@@ -160,7 +160,8 @@
 	{
 		display: inline-block;
 		background: #3f3f3f;
-		width: 40px;
+		max-width: 40px;
+		width: 100%
 		height: 40px;
 		line-height: 40px;
 		border-radius: 20px;
@@ -209,7 +210,8 @@
 	.box3,
 	.box4
 	{
-		width: 235px;
+		max-width: 235px;
+		width: 100%;
 	}
 	
 	.box1,
@@ -233,7 +235,8 @@
 	.boxB,
 	.boxC
 	{
-		width: 384px;
+		max-width: 384px;
+		width: 100%;
 	}
 
 	.boxA,
@@ -255,7 +258,8 @@
 	.tbox1,
 	.tbox2
 	{
-		width: 575px;
+		max-width: 575px;
+		width: 100%;
 	}
 	
 	.tbox1
@@ -543,6 +547,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
