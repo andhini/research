@@ -1,3 +1,5 @@
+/* ========== Global ========== */
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -7,35 +9,20 @@
 body {
   font-family: 'Didact Gothic', sans-serif;
   background: #181818;
-  color: white;
+  color: #ffffff;
   line-height: 1.6;
 }
 
 .container {
   width: 90%;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
 }
 
-.section {
-  padding: 5rem 0;
-}
-
-.light {
-  background: white;
-  color: #333;
-}
-
-.section-title {
-  text-align: center;
-  margin-bottom: 3rem;
-  font-size: 2rem;
-}
-
-/* ===== HERO ===== */
+/* ========== Navigation ========== */
 
 .hero {
-  background: #111 url("images/saturate3.jpg") center/cover no-repeat;
+  background: url("images/saturate3.jpg") center/cover no-repeat;
   padding: 3rem 0 6rem 0;
 }
 
@@ -45,9 +32,8 @@ body {
   align-items: center;
 }
 
-.affiliation {
-  font-size: 0.9rem;
-  opacity: 0.8;
+.logo {
+  font-size: 1.8rem;
 }
 
 .menu {
@@ -59,12 +45,16 @@ body {
 .menu a {
   text-decoration: none;
   color: rgba(255,255,255,0.8);
-  font-size: 0.9rem;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+  letter-spacing: 1px;
 }
 
 .menu a:hover {
   color: white;
 }
+
+/* ========== Hero Content ========== */
 
 .hero-content {
   text-align: center;
@@ -73,40 +63,63 @@ body {
 
 .hero-content h2 {
   font-size: 3rem;
+  margin-bottom: 1rem;
 }
 
-.hero-buttons {
-  margin-top: 2rem;
+.hero-content p {
+  font-size: 1.3rem;
+  opacity: 0.8;
 }
 
-.btn, .btn-outline {
+.btn {
   display: inline-block;
-  padding: 0.8rem 1.8rem;
-  margin: 0.5rem;
+  margin-top: 2rem;
+  padding: 0.9rem 2rem;
+  background: #2651a8;
+  color: white;
   text-decoration: none;
   border-radius: 6px;
   font-weight: bold;
 }
 
-.btn {
+.btn:hover {
+  background: #1f3f82;
+}
+
+.btn-secondary {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.7rem 1.5rem;
   background: #2651a8;
   color: white;
+  text-decoration: none;
+  border-radius: 6px;
 }
 
-.btn-outline {
-  border: 2px solid white;
-  color: white;
-}
-
-.btn-outline.small {
-  border: 2px solid #2651a8;
+.btn.light {
+  background: white;
   color: #2651a8;
-  font-size: 0.85rem;
 }
 
-/* ===== GRID ===== */
+/* ========== Three Column Section ========== */
 
-.grid-3 {
+.three-column {
+  background: white;
+  color: #333;
+  padding: 5rem 0;
+}
+
+.section-title {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.section-title h2 {
+  font-size: 2.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.cards {
   display: flex;
   gap: 2rem;
   flex-wrap: wrap;
@@ -117,45 +130,33 @@ body {
   background: #f4f4f4;
   padding: 2rem;
   border-radius: 8px;
-  color: #333;
-}
-
-/* ===== PUBLICATIONS ===== */
-
-.publication {
-  margin-bottom: 1.5rem;
-  font-size: 0.95rem;
-}
-
-.publication em {
-  font-style: italic;
-}
-
-.publication a {
-  color: #2651a8;
-  text-decoration: none;
-}
-
-.academic-links {
-  margin-top: 2rem;
   text-align: center;
 }
 
-.center {
+/* ========== Welcome Section ========== */
+
+.welcome {
+  background: #2651a8;
+  padding: 5rem 0;
   text-align: center;
 }
 
-/* ===== FOOTER ===== */
+.welcome p {
+  max-width: 700px;
+  margin: 1.5rem auto;
+}
+
+/* ========== Footer ========== */
 
 .footer {
   background: #111;
-  padding: 2rem 0;
+  padding: 3rem 0;
   text-align: center;
   font-size: 0.9rem;
   opacity: 0.7;
 }
 
-/* ===== RESPONSIVE ===== */
+/* ========== Responsive ========== */
 
 @media (max-width: 768px) {
 
@@ -166,10 +167,12 @@ body {
 
   .menu {
     flex-direction: column;
-    align-items: center;
+    gap: 1rem;
+    text-align: center;
   }
 
   .hero-content h2 {
     font-size: 2rem;
   }
+
 }
