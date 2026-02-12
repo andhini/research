@@ -228,11 +228,16 @@
 /* 3-column                                                                      */
 /*********************************************************************************/
 
+	#three-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	}
+	
 	.boxA,
 	.boxB,
-	.boxC
-	{
-		width: 384px;
+	.boxC {
+	    width: 32%;
 	}
 
 	.boxA,
@@ -495,8 +500,7 @@
 	
 	#welcome .container
 	{
-		width: 1000px;
-		padding: 0px 100px;
+		padding: 0 2rem;
 		color: rgba(255,255,255,0.8);
 	}
 	
@@ -541,6 +545,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
