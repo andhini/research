@@ -329,13 +329,13 @@
 	#logo
 	{
 		position: absolute;
-		top: 3.6em;
+		top: 3.em;
 		left: 0;
 	}
 	
 	#logo h1
 	{
-		font-size: 2.6em;
+		font-size: 1.5em;
 		color: #79C255;
 	}
 	
@@ -547,6 +547,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
