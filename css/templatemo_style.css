@@ -1,6 +1,9 @@
 /*
 CSS Credit: http://www.templatemo.com/
 */
+* {
+  box-sizing: border-box;
+}
 
 body {
 	margin:0px;
@@ -497,4 +500,5 @@ ul li {
 #templatemo_copyright a {
 	color: #6e6965;
 }
+
 /* end of copyright */
