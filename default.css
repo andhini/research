@@ -57,7 +57,9 @@
 	{
 		overflow: hidden;
 		margin: 0em auto;
-		width: 1200px;
+		max-width: 1200px;
+		width: 90%;
+    	margin: 0 auto;
 	}
 	
 /*********************************************************************************/
@@ -535,6 +537,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
