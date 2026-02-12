@@ -8,7 +8,7 @@
 		margin: 0em;
  		padding: 0em;
 		width: 100%;
-		font-size: clamp(15px, 0.9vw + 0.5rem, 17px);
+		font-size: 16px;
     	
 	}
 	
@@ -540,6 +540,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
