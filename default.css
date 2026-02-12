@@ -67,6 +67,16 @@
 		width: 100%;
     	margin: 0em auto;
 	}
+
+	.scaled-container 
+	{
+	    width: 70%; /* Scales to 70% of the parent-container's width */
+	    background-color: steelblue;
+	    color: white;
+	    /* Optional: Center the container if it's less than 100% width */
+	    margin-left: auto;
+	    margin-right: auto;
+	}
 	
 /*********************************************************************************/
 /* Image Style                                                                   */
@@ -540,6 +550,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
