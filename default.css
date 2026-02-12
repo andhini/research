@@ -231,24 +231,17 @@
 /* 3-column                                                                      */
 /*********************************************************************************/
 
-	.boxA,
-	.boxB,
-	.boxC
-	{
-		max-width: 384px;
-		width: 100%;
-	}
-
-	.boxA,
-	.boxB
-	{
-		float: left;
-		margin-right: 20px;
+	#three-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
 	}
 	
-	.boxC
-	{
-		float: right;
+	.boxA,
+	.boxB,
+	.boxC {
+	    width: 31.5%;
+		margin: 1.5%;
 	}
 
 /*********************************************************************************/
@@ -547,6 +540,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
