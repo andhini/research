@@ -71,7 +71,7 @@
 	.scaled-container 
 	{
 	    width: 70%; /* Scales to 70% of the parent-container's width */
-	    background-color: steelblue;
+	    background-color: black;
 	    color: white;
 	    /* Optional: Center the container if it's less than 100% width */
 	    margin-left: auto;
@@ -550,6 +550,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
