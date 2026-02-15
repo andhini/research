@@ -411,7 +411,9 @@
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
-	    background: white;
+	    background: black;
+		color: #FFF
+		
 	    /* min-width: 220px; */
 	}
 	
@@ -425,7 +427,7 @@
 	}
 	
 	.submenu-content a:hover {
-	    background: #eee;
+	    background: #2651a8;
 	}
 	
 	/* Show on hover */
@@ -459,8 +461,7 @@
 		padding: 1.40em 3em;
 		border-radius: 6px;
 		font-weight: 700;
-		font-size: 1em;
-		
+		font-size: 1em;	
 	}
 	
 	.banner
@@ -587,41 +588,4 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
