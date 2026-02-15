@@ -70,7 +70,7 @@
 
 	.scaled-container 
 	{
-	    width: 70%; /* Scales to 70% of the parent-container's width */
+	    width: 85%; /* Scales to 70% of the parent-container's width */
 	    background-color: black;
 	    color: white;
 	    /* Optional: Center the container if it's less than 100% width */
@@ -239,7 +239,7 @@
     .box3,
 	.box4 {
         width: 100%;
-        /* margin-bottom: 20px; /* optional spacing */ */
+        margin-bottom: 20px; /* optional spacing */
     }
 	}
 	
@@ -268,7 +268,7 @@
     .boxB,
     .boxC {
         width: 100%;
-        /* margin-bottom: 20px; /* optional spacing */ */
+        margin-bottom: 20px; /* optional spacing */
     }
 	}
 
@@ -292,6 +292,7 @@
     .tbox1,
     .tbox2 {
         width: 100%;
+		margin-bottom: 20px; /* optional spacing */
     }
 	}
 
@@ -656,6 +657,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
