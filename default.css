@@ -389,26 +389,11 @@
 		font-size: 0.8em;
 		color: rgba(255,255,255,0.80);
 	}
-	.submenu {
-		  float: left;
-		  overflow: hidden;
-		}
-		
-		.submenu .submenubtn {
-		  font-size: 0.8em;  
-		  border: none;
-		  outline: none;
-		  color: white;
-		  padding: 1em 1.5em;
-		  background-color: inherit;
-		  font-family: inherit;
-		  margin: 0;
-		}
-	
-	#menu li:hover a, #menu li.active a, #menu li.active span, #submenu li:hover a, #submenubtn li.active
+
+	#menu li:hover a, #menu li.active a, #menu li.active span
 	{
 	}
-	
+
 	#menu .active a
 	{
 		background: #2651a8;
@@ -420,30 +405,34 @@
 	{
 	}
 
+	/* Dropdown */
 	.submenu-content {
-	  display: none;
-	  position: absolute;
-	  left: 0;
-	  background-color: rgba(255,255,255,1);
-	  width: 100%;
-	  z-index: 1;
+	    display: none;
+	    position: absolute;
+	    top: 100%;
+	    left: 0;
+	    background: white;
+	    /* min-width: 220px; */
+	}
+	
+	.submenu-content li {
+	    float: none;
 	}
 	
 	.submenu-content a {
-	  float: left;
-	  color: rgba(255,255,255,1);
-	  text-decoration: none;
+	    color: black;
+	    padding: 0.8em 1em;
 	}
 	
 	.submenu-content a:hover {
-	  background-color: rgba(255,255,255,1);
-	  color: red;
+	    background: #eee;
 	}
 	
+	/* Show on hover */
 	.submenu:hover .submenu-content {
-	  display: block;
+	    display: block;
 	}
-
+	
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
@@ -598,6 +587,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
