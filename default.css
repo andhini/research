@@ -62,7 +62,7 @@
 	
 	.container
 	{
-		overflow: visible;
+		overflow: hidden;
 		max-width: 1200px;
 		width: 100%;
     	margin: 0em auto;
@@ -321,6 +321,7 @@
 
 	#header-wrapper
 	{
+		overflow: visible;
 		position: relative;
 		padding: 5em 0em 7em 0em;
 		background: #111111 url(images/redfluid.gif) no-repeat center;
@@ -599,6 +600,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
