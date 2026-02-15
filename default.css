@@ -426,7 +426,8 @@
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
-	    background: #111;	
+	    background: red; 
+			/* #111;	 */
 	    min-width: 12em;   /* fixed width */
    		z-index: 999;
 	}
@@ -604,6 +605,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
