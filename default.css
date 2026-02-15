@@ -377,6 +377,7 @@
 		display: block;
 		float: left;
 		text-align: center;
+		overflow: hidden;
 	}
 	
 	#menu li a, #menu li span
@@ -388,8 +389,23 @@
 		font-size: 0.8em;
 		color: rgba(255,255,255,0.80);
 	}
+	.submenu {
+		  float: left;
+		  overflow: hidden;
+		}
+		
+		.submenu .submenubtn {
+		  font-size: 0.8em;  
+		  border: none;
+		  outline: none;
+		  color: white;
+		  padding: 1em 1.5em;
+		  background-color: inherit;
+		  font-family: inherit;
+		  margin: 0;
+		}
 	
-	#menu li:hover a, #menu li.active a, #menu li.active span
+	#menu li:hover a, #menu li.active a, #menu li.active span, #submenu li:hover a, #submenubtn li.active
 	{
 	}
 	
@@ -402,6 +418,30 @@
 	
 	#menu .icon
 	{
+	}
+
+	.submenu-content {
+	  display: none;
+	  position: absolute;
+	  left: 0;
+	  background-color: rgba(255,255,255,1);
+	  width: 100%;
+	  z-index: 1;
+	}
+	
+	.submenu-content a {
+	  float: left;
+	  color: rgba(255,255,255,1);
+	  text-decoration: none;
+	}
+	
+	.submenu-content a:hover {
+	  background-color: rgba(255,255,255,1);
+	  color: red;
+	}
+	
+	.submenu:hover .submenu-content {
+	  display: block;
 	}
 
 /*********************************************************************************/
@@ -558,6 +598,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
