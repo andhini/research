@@ -215,33 +215,37 @@
 /*********************************************************************************/
 /* 4-column                                                                      */
 /*********************************************************************************/
+	#four-column {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+	}
+	
+	.box1,
+	.box2,
+	.box3,
+	.box4 {
+	    width: 24.0%;
+	}
 
-	.box1,
-	.box2,
-	.box3,
-	.box4
-	{
-		max-width: 235px;
-		width: 100%;
-	}
-	
-	.box1,
-	.box2,
-	.box3,
-	{
-		float: left;
-		margin-right: 20px;
-	}
-	
-	.box4
-	{
-		float: right;
+	@media (max-width: 768px) {
+
+    #four-column {
+        flex-direction: column;
+    }
+
+    .box1,
+    .box2,
+    .box3,
+	.box4 {
+        width: 100%;
+        /* margin-bottom: 20px; /* optional spacing */ */
+    }
 	}
 	
 /*********************************************************************************/
 /* 3-column                                                                      */
 /*********************************************************************************/
-
 	#three-column {
     display: flex;
     justify-content: space-between;
@@ -264,32 +268,13 @@
     .boxB,
     .boxC {
         width: 100%;
-        margin-bottom: 20px; /* optional spacing */
+        /* margin-bottom: 20px; /* optional spacing */ */
     }
-
 	}
 
 /*********************************************************************************/
 /* 2-column                                                                      */
 /*********************************************************************************/
-
-	/* .tbox1,
-	.tbox2
-	{
-		max-width: 575px;
-		width: 100%;
-	}
-	
-	.tbox1
-	{
-		float: left;
-	}
-
-	.tbox2
-	{
-		float: right;
-	} */
-
 	#two-column {
     display: flex;
     justify-content: space-between;
@@ -299,6 +284,16 @@
 	.tbox2 {
 	    width: 48.0%;
 	}
+
+ 	#two-column {
+        flex-direction: column;
+    }
+    .tbox1,
+    .tbox2 {
+        width: 100%;
+    }
+	}
+
 /*********************************************************************************/
 /* Heading Titles                                                                */
 /*********************************************************************************/
@@ -604,6 +599,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
