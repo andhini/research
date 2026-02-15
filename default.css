@@ -463,9 +463,12 @@
 	    /* Make submenu part of normal flow */
 	    .submenu-content {
 	        position: static;
-	        display: block;
-	        padding-left: 20px;
+	        display: none;
 	    }
+		
+		 .submenu:focus-within .submenu-content {
+        display: block;
+    	}
 	
 	}
 /*********************************************************************************/
@@ -621,6 +624,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
