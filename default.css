@@ -492,7 +492,8 @@
 	    /* Submenu behavior on mobile */
 	    .submenu-content {
 	        position: static;
-	        display: none;
+	        display: flex;
+			flex-direction: column;
 	        background: #202020;
 	    }
 	
@@ -655,6 +656,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
