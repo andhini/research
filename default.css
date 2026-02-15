@@ -412,7 +412,8 @@
 	    top: 100%;
 	    left: 0;
 	    background: none;	
-	    /* min-width: 220px; */
+	    width: 100%;
+  		z-index: 1;
 	}
 	
 	.submenu-content li {
@@ -420,12 +421,18 @@
 	}
 	
 	.submenu-content a {
+		float: left;
 	    color: #FFF;
 	    padding: 0.8em 1em;
 	}
 	
 	.submenu-content a:hover {
 	    background: #2651a8;
+	}
+
+	.submenu {
+	  float: left;
+	  overflow: hidden;
 	}
 	
 	/* Show on hover */
@@ -586,5 +593,6 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
