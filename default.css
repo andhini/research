@@ -387,6 +387,7 @@
 	 */
 	#menu li a, #menu li span
 	{
+		display: block;
 		padding: 1em 1.5em;
 		letter-spacing: 1px;
 		text-decoration: none;
@@ -597,6 +598,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
