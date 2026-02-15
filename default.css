@@ -468,7 +468,7 @@
 	
 	    /* Hide menu by default */
 	    #menu > ul {
-	        display: none;
+	        display: flex;
 	        flex-direction: column;
 	        background: #181818;
 	        width: 100%;
@@ -493,10 +493,12 @@
 	    /* Submenu behavior on mobile */
 	    .submenu-content {
 	        position: static;
-	        display: flex;
-			flex-direction: column;
+	        display: block;
 	        background: #202020;
 	    }
+		.submenu-content li {
+			    display: block;
+		}
 	
 	    .submenu:hover .submenu-content {
 	        display: block;
@@ -657,6 +659,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
