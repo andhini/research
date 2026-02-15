@@ -447,7 +447,7 @@
 	}
 	
 	/* Show on hover */
-	.submenu:hover .submenu-content {
+	.submenu:hover > .submenu-content {
 	    display: block;
 	}
 
@@ -489,10 +489,10 @@
 	        position: static;
 	        display: none;
 	        flex-direction: column;
-	        background: #202020;
+	        background: none;
 	    }
 	
-	    .submenu:hover .submenu-content {
+	    .submenu:hover > .submenu-content {
 	        display: block;
 	    }
 	}
@@ -651,6 +651,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
