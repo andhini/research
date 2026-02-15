@@ -412,10 +412,11 @@
 	}
 
 	/* Dropdown */
-	.submenu {
+
+	/* .submenu {
 		  float: left;
 		  overflow: hidden;
-		}
+		} */
 
 	.submenu-content {
 	    display: none;
@@ -431,7 +432,8 @@
 	}
 	
 	.submenu-content a {
-		float: left;
+		display: block;
+		/* float: left; */
 	    color: #FFF;
 	    padding: 0.8em 1em;
 	}
@@ -598,6 +600,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
