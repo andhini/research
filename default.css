@@ -371,6 +371,11 @@
 	{
 		display: inline-block;
 	}
+
+	#menu > ul > li {
+	    float: left;              /* main menu horizontal */
+	    position: relative;       /* needed for dropdown */
+	}
 	
 	#menu li
 	{
@@ -592,6 +597,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
