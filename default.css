@@ -411,9 +411,7 @@
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
-	    background: black;
-		color: #FFF
-		
+	    background: none;	
 	    /* min-width: 220px; */
 	}
 	
@@ -422,7 +420,7 @@
 	}
 	
 	.submenu-content a {
-	    color: black;
+	    color: #FFF;
 	    padding: 0.8em 1em;
 	}
 	
@@ -588,4 +586,5 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
