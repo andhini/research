@@ -363,7 +363,7 @@
 
 	#menu
 	{
-		position: absolute;
+		position: relative;
 		top: 4.5em;
 		right: 0;
 	}
@@ -381,14 +381,6 @@
 	    position: relative;       /* needed for dropdown */
 	}
 	
-	/* #menu li
-	{
-		display: block;
-		float: left;
-		text-align: center;
-		overflow: hidden;
-	}
-	 */
 	#menu li a, #menu li span
 	{
 		display: block;
@@ -416,13 +408,16 @@
 	}
 
 	/* Dropdown */
+	.submenu {
+	    position: relative;
+	}
+
 	.submenu-content {
 	    display: none;
 	    position: absolute;
 	    top: 100%;
 	    left: 0;
-	    background: red;
-		/* #111; */
+	    background: none;
 	    min-width: 12em;   /* fixed width */
    		z-index: 999;
 	}
@@ -432,14 +427,12 @@
 	}
 	
 	.submenu-content a {
-		/* display: block; */
-		/* float: left; */
 	    color: #FFF;
 	    padding: 0.8em 1em;
 	}
 	
 	.submenu-content a:hover {
-	    background: #2651a8;
+	    background: #40183a;
 	}
 	
 	/* Show on hover */
@@ -600,6 +593,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
