@@ -381,6 +381,7 @@
 	#menu ul
 	{
 		/* display: inline-block; */
+		display: flex;
 		list-style: none;
 	    margin: 0;
 	    padding: 0;
@@ -445,7 +446,28 @@
 	.submenu:hover .submenu-content {
 	    display: block;
 	}
+
+    /* Show on mobile */
+
+	@media (max-width: 768px) {
 	
+	    /* Stack main menu vertically */
+	    #menu ul {
+	        flex-direction: column;
+	    }
+	
+	    #menu li {
+	        width: 100%;
+	    }
+	
+	    /* Make submenu part of normal flow */
+	    .submenu-content {
+	        position: static;
+	        display: block;
+	        padding-left: 20px;
+	    }
+	
+	}
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
@@ -599,6 +621,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
