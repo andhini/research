@@ -429,10 +429,12 @@
 	    background: none;
 	    min-width: 12em;   /* fixed width */
    		z-index: 999;
+		flex-direction: column
 	}
 	
 	.submenu-content li {
 	    float: none;
+		display: block;
 	}
 	
 	.submenu-content a {
@@ -451,12 +453,10 @@
 
     /* Show on mobile */
 	@media (max-width: 768px) {
-		    /* Menu container */
 	    #menu {
 	        position: relative;
 	    }
 	
-	    /* Hamburger icon (pure CSS) */
 	    #menu::before {
 	        content: "☰";
 	        font-size: 28px;
@@ -466,45 +466,37 @@
 	        color: white;
 	    }
 	
-	    /* Hide menu by default */
+	    /* Hide menu initially */
 	    #menu > ul {
-	        display: flex;
+	        display: none;
 	        flex-direction: column;
-	        background: #181818;
 	        width: 100%;
+	        background: #181818;
 	    }
 	
-	    /* Show menu when menu is hovered / tapped */
+	    /* Show when hovering/tapping */
 	    #menu:hover > ul {
 	        display: flex;
 	    }
 	
-	    /* Stack menu items vertically */
 	    #menu > ul > li {
 	        float: none;
 	        width: 100%;
 	    }
 	
-	    #menu li a {
-	        padding: 1em;
-	        text-align: left;
-	    }
-	
-	    /* Submenu behavior on mobile */
+	    /* Submenu mobile */
 	    .submenu-content {
 	        position: static;
-	        display: block;
+	        display: none;
+	        flex-direction: column;
 	        background: #202020;
 	    }
-		.submenu-content li {
-			    display: block;
-		}
 	
 	    .submenu:hover .submenu-content {
 	        display: block;
 	    }
-	
 	}
+
 
 /*********************************************************************************/
 /* Banner                                                                        */
@@ -659,6 +651,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
