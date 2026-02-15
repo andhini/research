@@ -406,6 +406,11 @@
 	}
 
 	/* Dropdown */
+	.submenu {
+		  float: left;
+		  overflow: hidden;
+		}
+
 	.submenu-content {
 	    display: none;
 	    position: absolute;
@@ -413,7 +418,6 @@
 	    left: 0;
 	    background: none;	
 	    width: 100%;
-  		z-index: 1;
 	}
 	
 	.submenu-content li {
@@ -428,11 +432,6 @@
 	
 	.submenu-content a:hover {
 	    background: #2651a8;
-	}
-
-	.submenu {
-	  float: left;
-	  overflow: hidden;
 	}
 	
 	/* Show on hover */
@@ -593,6 +592,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
