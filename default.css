@@ -377,14 +377,14 @@
 	    position: relative;       /* needed for dropdown */
 	}
 	
-	#menu li
+	/* #menu li
 	{
 		display: block;
 		float: left;
 		text-align: center;
 		overflow: hidden;
 	}
-	
+	 */
 	#menu li a, #menu li span
 	{
 		padding: 1em 1.5em;
@@ -597,6 +597,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
