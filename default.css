@@ -62,7 +62,7 @@
 	
 	.container
 	{
-		overflow: hidden;
+		overflow: visible;
 		max-width: 1200px;
 		width: 100%;
     	margin: 0em auto;
@@ -599,6 +599,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
