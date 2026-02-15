@@ -285,6 +285,7 @@
 	    width: 48.0%;
 	}
 
+	@media (max-width: 768px) {
  	#two-column {
         flex-direction: column;
     }
@@ -448,29 +449,59 @@
 	}
 
     /* Show on mobile */
-
 	@media (max-width: 768px) {
-	
-	    /* Stack main menu vertically */
-	    #menu ul {
-	        flex-direction: column;
+		    /* Menu container */
+	    #menu {
+	        position: relative;
 	    }
 	
-	    #menu li {
+	    /* Hamburger icon (pure CSS) */
+	    #menu::before {
+	        content: "☰";
+	        font-size: 28px;
+	        cursor: pointer;
+	        display: block;
+	        padding: 0.8em 1em;
+	        color: white;
+	    }
+	
+	    /* Hide menu by default */
+	    #menu > ul {
+	        display: none;
+	        flex-direction: column;
+	        background: #181818;
 	        width: 100%;
 	    }
 	
-	    /* Make submenu part of normal flow */
-	    .submenu-content {
-			display: none;
-	        position: static;     
+	    /* Show menu when menu is hovered / tapped */
+	    #menu:hover > ul {
+	        display: flex;
 	    }
-		
-		 .submenu:focus-within .submenu-content {
-        display: block;
-    	}
+	
+	    /* Stack menu items vertically */
+	    #menu > ul > li {
+	        float: none;
+	        width: 100%;
+	    }
+	
+	    #menu li a {
+	        padding: 1em;
+	        text-align: left;
+	    }
+	
+	    /* Submenu behavior on mobile */
+	    .submenu-content {
+	        position: static;
+	        display: none;
+	        background: #202020;
+	    }
+	
+	    .submenu:hover .submenu-content {
+	        display: block;
+	    }
 	
 	}
+
 /*********************************************************************************/
 /* Banner                                                                        */
 /*********************************************************************************/
@@ -624,6 +655,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
