@@ -462,8 +462,8 @@
 	
 	    /* Make submenu part of normal flow */
 	    .submenu-content {
-	        position: static;
-	        display: none;
+			display: none;
+	        position: static;     
 	    }
 		
 		 .submenu:focus-within .submenu-content {
@@ -624,6 +624,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
