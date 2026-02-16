@@ -215,7 +215,7 @@
 /*********************************************************************************/
 /* 4-column                                                                      */
 /*********************************************************************************/
-	#four-column {
+	.four-column {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -230,7 +230,7 @@
 
 	@media (max-width: 768px) {
 
-    #four-column {
+    .four-column {
         flex-direction: column;
     }
 
@@ -239,14 +239,14 @@
     .box3,
 	.box4 {
         width: 100%;
-        margin-bottom: 20px; /* optional spacing */
+        margin-bottom: 3em; /* optional spacing */
     }
 	}
 	
 /*********************************************************************************/
 /* 3-column                                                                      */
 /*********************************************************************************/
-	#three-column {
+	.three-column {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -260,7 +260,7 @@
 
 	@media (max-width: 768px) {
 
-    #three-column {
+    .three-column {
         flex-direction: column;
     }
 
@@ -268,14 +268,14 @@
     .boxB,
     .boxC {
         width: 100%;
-        margin-bottom: 20px; /* optional spacing */
+        margin-bottom: 3em; /* optional spacing */
     }
 	}
 
 /*********************************************************************************/
 /* 2-column                                                                      */
 /*********************************************************************************/
-	#two-column {
+	.two-column {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -286,13 +286,13 @@
 	}
 
 	@media (max-width: 768px) {
- 	#two-column {
+ 	.two-column {
         flex-direction: column;
     }
     .tbox1,
     .tbox2 {
         width: 100%;
-		margin-bottom: 20px; /* optional spacing */
+		margin-bottom: 3em; /* optional spacing */
     }
 	}
 
@@ -650,6 +650,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
