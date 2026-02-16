@@ -646,13 +646,16 @@
 	{
 		font-weight: bold;
 		color: rgba(0,0,0,0.8);
+	    width: 100%;
 	}
 
 	.three-column .title .byline
 	{
 		text-align: center;
 		color: rgba(0,0,0,.5);
+		width: 100%;
 	}
+
 
 
 
