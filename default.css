@@ -226,6 +226,7 @@
 	.box3,
 	.box4 {
 	    width: 24.0%;
+		margin-bottom: 2em; /* optional spacing */
 	}
 
 	@media (max-width: 768px) {
@@ -239,7 +240,7 @@
     .box3,
 	.box4 {
         width: 100%;
-        margin-bottom: 3em; /* optional spacing */
+        margin-bottom: 2em; /* optional spacing */
     }
 	}
 	
@@ -256,6 +257,7 @@
 	.boxB,
 	.boxC {
 	    width: 32.0%;
+		margin-bottom: 2em; /* optional spacing */
 	}
 
 	@media (max-width: 768px) {
@@ -268,7 +270,7 @@
     .boxB,
     .boxC {
         width: 100%;
-        margin-bottom: 3em; /* optional spacing */
+        margin-bottom: 2em; /* optional spacing */
     }
 	}
 
@@ -283,6 +285,7 @@
 	.tbox1,
 	.tbox2 {
 	    width: 48.0%;
+		margin-bottom: 2em; /* optional spacing */
 	}
 
 	@media (max-width: 768px) {
@@ -292,7 +295,7 @@
     .tbox1,
     .tbox2 {
         width: 100%;
-		margin-bottom: 3em; /* optional spacing */
+		margin-bottom: 2em; /* optional spacing */
     }
 	}
 
@@ -650,6 +653,7 @@
 		text-align: center;
 		color: rgba(0,0,0,.5);
 	}
+
 
 
 
