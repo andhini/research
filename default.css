@@ -641,7 +641,12 @@
 		color: rgba(0,0,0,1);
 		font-size: 2em;
 	}
-	
+
+	.three-column .title 
+	{
+	    width: 100%;
+	}
+
 	.three-column .title h2
 	{
 		font-weight: bold;
@@ -655,6 +660,7 @@
 		color: rgba(0,0,0,.5);
 		width: 100%;
 	}
+
 
 
 
